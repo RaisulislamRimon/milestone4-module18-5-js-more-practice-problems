@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>18_5-1 Recap and Practice Variable, Array, Conditionals</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark text-light">
+    <h1 class="text-center bg-primary">
+      18_5-1 Recap and Practice Variable, Array, Conditionals
+    </h1>
+    <section class="question-answers">
+      <div class="container">
+        <div>
+          <h2 class="text-center bg-warning">
+            ------------------ VARIABLE -------------------
+          </h2>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>1. What is JavaScript?</h4>
+            <p>
+              JavaScript is a scripting or programming language that allows you
+              to implement complex features on web pages — every time a web page
+              does more than just sit there and display static information for
+              you to look at — displaying timely content updates, interactive
+              maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. —
+              you can bet that JavaScript is probably involved. It is the third
+              layer of the layer cake of standard web technologies, two of which
+              (HTML and CSS) we have covered in much more detail in other parts
+              of the Learning Area.
+            </p>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>2. How does JS Works?</h4>
+            <p>
+              JavaScript is a client-side scripting language and one of the most
+              efficient, commonly used scripting languages. The term
+              .client-side scripting language means that it runs at the
+              client-side( or on the client machine) inside the web-browsers,
+              but one important thing to remember is that client's web-browser
+              also needs to support the JavaScript or it must be JavaScript
+              enabled. Nowadays, most of the modern web browsers support
+              JavaScript and have their JavaScript engines. For example, Google
+              Chrome has its own JavaScript engine called V8.
+            </p>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>3. What is Variable?</h4>
+            <p>
+              A variable is a named reference to a value. That way an
+              unpredictable value can be accessed through a predetermined name.
+              <br />
+              Variables are containers for storing data (storing data values).
+              In this example, x, y, and z, are variables, declared with the var
+              keyword: Example var x = 5; var y = 6; var z = x + y;
+            </p>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>4. Declare a variable</h4>
+            <p>
+              4 Ways to Declare a JavaScript Variable: Using var Using let Using
+              const Using nothing
+              <br />
+              Variables are containers for storing data (storing data values).
+              In this example, x, y, and z, are variables, declared with the var
+              keyword: Example var x = 5; var y = 6; var z = x + y;
+            </p>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>
+              5. Types of Variable? How can you find out type of a variable
+            </h4>
+            <p>
+              <a href="https://www.w3schools.com/js/js_datatypes.asp"
+                >(link1)types of variables in JavaScript (w3schools)</a
+              >
+              <br />
+              <a
+                href="https://www.techotopia.com/index.php/JavaScript_Variable_Types"
+                >link2</a
+              >
+              JavaScript supports five different types of variable. These
+              variable types are outlined in the following table together with
+              examples and a brief description of each type: Type Example
+              Description boolean true, false The boolean variable is used to
+              record a value of either true or false. Internally this is
+              essentially stored as 1 for true and 0 for false. number 1, -31,
+              0.023 The number variable holds any type of number, either an
+              integer or a real number. string "Hello World!" The string
+              variable type stores a string of characters, typically making up
+              either a word or sentence. string variables can also be assigned
+              empty strings. function any built-in or user defined function A
+              function is one of the basic building blocks of most programming
+              languages including JavaScript. Functions provide a way to
+              organize functionality into clean, reusable modules that can be
+              accessed from any other JavaScript to perform specific tasks. In
+              addition to user created functions, JavaScript contains a number
+              of built-in functions that provide pre-defined functionality.
+              Functions are covered in Understanding JavaScript Functions.
+              object document, window JavaScript provides a set of predefined
+              objects to which the JavaScript programmer has access. For example
+              the document object refers to the current web page and can be
+              accessed to make changes to the page content.
+            </p>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>6. Primitive and non-primitive data types</h4>
+            <p>
+              <a
+                href="https://www.geeksforgeeks.org/primitive-and-non-primitive-data-types-in-javascript/"
+                >link1</a
+              >
+              <br />
+              JavaScript has different data types, primitive and non-primitive.
+              There are seven primitive data types, Number, String, Boolean,
+              NULL, Undefined and Symbol and one non-primitive data type
+              ‘object’. There are differences between NULL and undefined data
+              types though both contain the same value. Like other programming
+              languages, JavaScript also has some in-built language errors or
+              discrepancies which is found in the NULL data type and the data
+              type of JavaScript functions.
+            </p>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>7. Naming Convention of JS variables</h4>
+            <p>
+              <a href="https://www.w3schools.com/js/js_conventions.asp"
+                >link1</a
+              >
+              <br />
+              <a
+                href="https://www.dummies.com/article/technology/programming-web-design/javascript/naming-javascript-variables-142522/"
+                >link2</a
+              >
+              <br />
+              A variable name should accurately identify your variable. When you
+              create good variable names, your JavaScript code becomes easier to
+              understand and easier to work with. Properly naming variables is
+              really important! Here are rules JavaScript has for naming
+              variables: Variable names cannot contain spaces. Variable names
+              must begin with a letter, an underscore (_) or a dollar sign ($).
+              Variable names can only contain letters, numbers, underscores, or
+              dollar signs. Variable names are case-sensitive. Certain words may
+              not be used as variable names, because they have other meanings
+              within JavaScript. Check out this complete list of the reserved
+              words. You’ll be faced with many decisions when choosing how to
+              name your variables: Do you want to begin your variable names with
+              an uppercase letter or a lowercase letter, or do you want to use
+              camelCase? Do you want to use multiple words within your variable
+              names? Do you want to use an underscore (_) between the words in
+              your variable name? (Remember: Variables can’t contain spaces.)
+              Fortunately, you don’t have to make all these choices by yourself.
+              Many professional programmers agree that there are best practices
+              to keep in mind when naming your variables: Don’t use names that
+              are too short. Simple one-letter names or names that don’t make
+              sense are not a good option when naming variables. Use more than
+              one word to name your variable. This will ensure your variable
+              name is precise. When using more than one word in your variable
+              names, always put the adjective to the left. For example, this is
+              correct: var greenGrass. Pick a style for names with more than one
+              word, and stick to it. The two most common ways to join words to
+              create a name are camelCase and using an underscore (_).
+              JavaScript is flexible — either method works.
+            </p>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>8. Math Operation +, -, *, /, %</h4>
+            <p>
+              <a href="https://www.w3schools.com/js/js_arithmetic.asp">link1</a>
+              <br />
+            </p>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>9. Short hand: +=, -=, *=, /=</h4>
+            <p>
+              <a href="https://www.hongkiat.com/blog/javascript-shorthands/"
+                >https://www.hongkiat.com/blog/javascript-shorthands/</a
+              >
+              <br />
+              <a href="http://www.punkchip.com/javascript-shorthand/"
+                >http://www.punkchip.com/javascript-shorthand/</a
+              >
+            </p>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>10. ++, --</h4>
+            <p>
+              <a
+                href="https://codeburst.io/javascript-increment-and-decrement-8c223858d5ed"
+                >https://codeburst.io/javascript-increment-and-decrement-8c223858d5ed</a
+              >
+              <br />
+              <a
+                href="https://stackoverflow.com/questions/971312/why-avoid-increment-and-decrement-operators-in-javascript"
+                >https://stackoverflow.com/questions/971312/why-avoid-increment-and-decrement-operators-in-javascript</a
+              >
+              <br />
+              <a href="https://www.w3schools.com/js/js_operators.asp"
+                >https://www.w3schools.com/js/js_operators.asp</a
+              >
+            </p>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>11. parseInt, ParseFloat</h4>
+            <p>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat"
+                >https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat</a
+              >
+              <br />
+              <a
+                href="https://stackoverflow.com/questions/12812863/difference-between-parseint-and-parsefloat"
+                >https://stackoverflow.com/questions/12812863/difference-between-parseint-and-parsefloat</a
+              >
+              <br />
+              <a
+                href="https://www.quora.com/What-is-the-difference-between-parseInt-and-parseFloat-in-JavaScript#:~:text=In%20short%20answer,Not%20a%20Number)"
+                >https://www.quora.com/What-is-the-difference-between-parseInt-and-parseFloat-in-JavaScript#:~:text=In%20short%20answer,Not%20a%20Number)</a
+              >
+            </p>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>12. toFixed</h4>
+            <p>
+              <a href="https://www.w3schools.com/jsref/jsref_tofixed.asp">
+                https://www.w3schools.com/jsref/jsref_tofixed.asp
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
