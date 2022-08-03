@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>18_5-1 Recap and Practice Variable, Array, Conditionals</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark text-light">
+    <!-- navbar starts  -->
+    <section>
+      <div class="container">
+        <header class="p-3 text-bg-dark">
+          <div class="container">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
+            >
+              <a
+                href="/"
+                class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
+              >
+                <h2>JavaScript</h2>
+              </a>
+
+              <ul
+                class="nav col-12 col-lg-auto me-lg-auto mb-2 ms-5 justify-content-center mb-md-0"
+              >
+                <li>
+                  <a href="/" class="nav-link px-2 text-white">Home</a>
+                </li>
+                <li>
+                  <a href="variable.html" class="nav-link px-2 text-white"
+                    >Variable</a
+                  >
+                </li>
+                <li>
+                  <a href="array.html" class="nav-link px-2 text-white"
+                    >Array</a
+                  >
+                </li>
+                <li>
+                  <a href="conditionals.html" class="nav-link px-2 text-white"
+                    >Conditionals</a
+                  >
+                </li>
+                <li>
+                  <a href="loop.html" class="nav-link px-2 text-secondary"
+                    >Loops</a
+                  >
+                </li>
+              </ul>
+
+              <form
+                class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+                role="search"
+              >
+                <input
+                  type="search"
+                  class="form-control form-control-dark text-bg-dark"
+                  placeholder="Search..."
+                  aria-label="Search"
+                />
+              </form>
+
+              <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2">
+                  Login
+                </button>
+                <button type="button" class="btn btn-warning">Sign-up</button>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </section>
+    <!-- navbar ends  -->
+    <h1 class="text-center bg-primary">
+      18_5-1 Recap and Practice Variable, Array, Conditionals
+    </h1>
+    <section class="question-answers">
+      <div class="container">
+        <div>
+          <h2 class="text-center bg-warning">
+            ------------------ Loops -------------------
+          </h2>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>1. Display "Ajke amar mon valo nei" for 39 times</h4>
+            <pre>
+                for (var i = 1; i <= 39; i++) {
+                    console.log(i, ". Ajke amar mon valo nei");
+                }                  
+            </pre>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>2. Display numbers between 58 to 98</h4>
+            <pre>
+                for (var i = 58; i <= 98; i++) {
+                    console.log(i);
+                }
+            </pre>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>3. Show all even numbers from 412 to 456</h4>
+            <pre>
+                for (var i = 412; i <= 456; i++) {
+                    if (i % 2 === 0) {
+                      console.log(i);
+                    }
+                }
+            </pre>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>4. Show all odd numbers 581 to 623</h4>
+            <pre>
+                for (var i = 581; i <= 623; i++) {
+                    if (i % 2 !== 0) {
+                      console.log(i);
+                    }
+                }
+            </pre>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>5. Difference between while loop and for loop</h4>
+            <p>
+              <a
+                href="https://levelup.gitconnected.com/the-difference-between-for-loops-and-while-loops-in-javascript-6029f45faeba"
+                >https://levelup.gitconnected.com/the-difference-between-for-loops-and-while-loops-in-javascript-6029f45faeba</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://stackoverflow.com/questions/53517928/what-is-the-real-difference-between-for-loop-and-while-loop"
+                >https://stackoverflow.com/questions/53517928/what-is-the-real-difference-between-for-loop-and-while-loop</a
+              >
+            </p>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>
+              6. Declare an array for all the topics that you have learned last
+              few days display then as output
+            </h4>
+            <pre>
+                var subjects = [
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "Bootstrap",
+                    "Tailwindcss",
+                    "PHP",
+                    "Python",
+                    "C++",
+                    "C#",
+                    "Java",
+                ];
+
+                for (var i = 0; i < subjects.length; i++) {
+                    console.log(subjects[i]);
+                }
+            </pre>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>
+              7. Create an array for all the mobile phones. Display all the
+              elements of the array by using a while loop
+            </h4>
+            <pre>
+                var mobileNames = [
+                    "iPhone",
+                    "iPad",
+                    "iPod",
+                    "Android",
+                    "BlackBerry",
+                    "Windows Phone",
+                    "Nokia",
+                    "LG",
+                    "Moto",
+                    "Samsung",
+                    "Sony",
+                    "HTC",
+                    "Nexus",
+                    "Motorola",
+                    "Other",
+                ];
+                var mobileCount = mobileNames.length;
+                console.log(mobileCount);
+                var i = 1;
+                while (i <= mobileCount) {
+                    //   console.log("Mobile Count: " + i);
+                    mobile = mobileNames[i - 1];
+                    console.log(mobile);
+                    i++;
+                    if (i > mobileCount) {
+                        break;
+                    }
+                }
+            </pre>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>
+              8. Run a loop from 30 to 86. this loop will stop if the values get
+              higher than 44
+            </h4>
+            <pre>
+                for (var i = 30; i <= 86; i++) {
+                    if (i > 44) {
+                      break;
+                    }
+                    console.log(i);
+                }                 
+            </pre>
+          </div>
+          <div class="border border-primary border-2 p-2 mb-3 rounded">
+            <h4>
+              9. Write the price of the books that you have. Display the prices
+              if the prices is lower than 200
+            </h4>
+            <pre>
+                var bookPrice = [
+                    2000, 40000, 160, 80, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1000,
+                ];  
+                console.log(bookPrice.length);
+
+                for (var i = 0; i < bookPrice.length; i++) {
+                    if (bookPrice[i] > 200) {
+                        continue;
+                    }
+                    console.log(bookPrice[i]);
+                }           
+            </pre>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
